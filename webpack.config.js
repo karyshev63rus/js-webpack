@@ -4,8 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+    resolve: { extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'] },
     entry: {
-        main: ['@babel/polyfill', './src/index.js'],
+        main: ['@babel/polyfill', './src/index.jsx'],
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -31,6 +32,10 @@ module.exports = {
                         presets: ['@babel/preset-env', '@babel/preset-react'],
                     },
                 },
+            },
+            {
+                test: /\.[tj]sx$/i,
+                use: ['ts-loader'],
             },
             {
                 test: /\.css$/i,

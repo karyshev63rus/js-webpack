@@ -24,6 +24,8 @@
 
 ### npm i react react-dom
 
+### npm i -D ts-loader
+
 ### npm i -D babel-loader @babel/core
 
 ### npm i -D @babel/preset-env
@@ -31,3 +33,5 @@
 ### npm i -D @babel/preset-react
 
 ### npm i -D @babel/polyfill
+
+#### указать в файле tsconfig.json: "allowJs": true; jsx: "react"
