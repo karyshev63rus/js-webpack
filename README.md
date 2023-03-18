@@ -35,3 +35,7 @@
 ### npm i -D @babel/polyfill
 
 #### указать в файле tsconfig.json: "allowJs": true; jsx: "react"
+
+**_Ветка SSR_**
+
+### npm i -D webpack-node-externals
