@@ -13,3 +13,5 @@
 ### npm i -D less-loader
 
 ### npm i -D sass-loader sass (в доке npm install sass-loader sass webpack --save-dev)
+
+### npm i -D webpack-dev-server
