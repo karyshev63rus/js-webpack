@@ -1,8 +1,9 @@
 body {
-	background-color: gainsboro;
+	background-color: red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
-	height: 100vh;
+	justify-content: center;
+	height: 720px;
+	gap: 10px;
 }
