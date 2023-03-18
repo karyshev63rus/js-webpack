@@ -17,3 +17,17 @@
 ### npm i -D file-loader
 
 ### npm i -D webpack-dev-server
+
+#
+
+**_Ветка React_**
+
+### npm i react react-dom
+
+### npm i -D babel-loader @babel/core
+
+### npm i -D @babel/preset-env
+
+### npm i -D @babel/preset-react
+
+### npm i -D @babel/polyfill

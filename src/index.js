@@ -1,10 +1,11 @@
-import Person from './person.js';
-import './styles/style.css';
-import './styles/style.less';
-import './styles/style.scss';
-import logo from './images/webpack_logo.png';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from './App.js';
 
-const person = new Person('Mick', 46, 'Russia');
-console.log(person);
-
-document.querySelector('.img img').src = logo;
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
