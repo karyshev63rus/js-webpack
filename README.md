@@ -36,6 +36,10 @@
 
 #### указать в файле tsconfig.json: "allowJs": true; jsx: "react"
 
+#
+
 **_Ветка SSR_**
 
 ### npm i -D webpack-node-externals
+
+### npm i nodemon

@@ -20,29 +20,41 @@ module.exports = {
                 },
             },
             {
-                test: /\.[tj]sx$/i,
+                test: /\.[tj]sx?$/i,
                 use: ['ts-loader'],
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
-            },
-            {
-                test: /\.less$/i,
-                use: ['style-loader', 'css-loader', 'less-loader'],
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-            },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
                 use: [
+                    'style-loader',
                     {
-                        loader: 'file-loader',
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                mode: 'local',
+                                localIdentName:
+                                    '[name]__[local]--[hash:base64:5]',
+                            },
+                        },
                     },
                 ],
             },
+            // {
+            //     test: /\.less$/i,
+            //     use: ['style-loader', 'css-loader'],
+            // },
+            // {
+            //     test: /\.s[ac]ss$/i,
+            //     use: ['style-loader', 'css-loader', 'sass-loader'],
+            // },
+            // {
+            //     test: /\.(png|jpe?g|gif)$/i,
+            //     use: [
+            //         {
+            //             loader: 'file-loader',
+            //         },
+            //     ],
+            // },
         ],
     },
 };
