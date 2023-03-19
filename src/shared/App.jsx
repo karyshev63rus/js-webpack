@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import style from './styles/style.module.css';
+import style from './styles/style.module.less';
 
 export const App = () => {
     return (
         <Fragment>
-            <div className={style.h1}>Hi there!</div>
+            <h1 className={style.h1}>Hi there!</h1>
         </Fragment>
     );
 };

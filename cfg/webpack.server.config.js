@@ -19,7 +19,7 @@ module.exports = {
                 use: ['ts-loader'],
             },
             {
-                test: /\.css$/i,
+                test: /\.less$/i,
                 use: [
                     {
                         loader: 'css-loader',
@@ -32,24 +32,9 @@ module.exports = {
                             },
                         },
                     },
+                    'less-loader',
                 ],
             },
-            // {
-            //     test: /\.less$/i,
-            //     use: ['style-loader', 'css-loader', 'less-loader'],
-            // },
-            // {
-            //     test: /\.s[ac]ss$/i,
-            //     use: ['style-loader', 'css-loader', 'sass-loader'],
-            // },
-            // {
-            //     test: /\.(png|jpe?g|gif)$/i,
-            //     use: [
-            //         {
-            //             loader: 'file-loader',
-            //         },
-            //     ],
-            // },
         ],
     },
     optimization: {
